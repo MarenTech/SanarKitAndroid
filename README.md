@@ -7,7 +7,7 @@ SanarKit - is a Android SDK designed to seamlessly integrate Sanar services into
 To get started with integrating the SanarKit Android library into your application, you first need to download the latest release of the library from the official repository. Follow the steps below:
 
 - Visit the GitHub Releases Page:
-Go to the SanarKit releases page by clicking on the following link: [SanarKit Android Library Releases](https://github.com/MarenTech/KotlinSanarKit/releases/).
+Go to the SanarKit releases page by clicking on the following link: [SanarKit SDK Android Releases](https://github.com/MarenTech/SanarKitAndroid/releases).
 
 - Download the Latest Release:
     - On the releases page, locate the latest release version at the top of the list.
