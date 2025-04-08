@@ -157,7 +157,7 @@ sanarKit.gotoBookingView()
 
 
 # gotoAppointmentListView
-he SanarKit SDK provides a method called `gotoAppointmentListView` that allows your application to navigate directly to the post-booking flow. This flow includes functionalities such as viewing appointment lists, accessing appointment details, and chatting with the provider. By utilizing `gotoAppointmentListView`, your app can seamlessly manage the post-booking process within the SDK, reducing the need for additional development and providing a smooth user experience.
+The SanarKit SDK provides a method called `gotoAppointmentListView` that allows your application to navigate directly to the post-booking flow. This flow includes functionalities such as viewing appointment lists, accessing appointment details, and chatting with the provider. By utilizing `gotoAppointmentListView`, your app can seamlessly manage the post-booking process within the SDK, reducing the need for additional development and providing a smooth user experience.
 
 To navigate to the post-booking flow, simply call the `gotoAppointmentListView` method on your `SanarKit` instance:
 
@@ -173,6 +173,25 @@ sanarKit.gotoAppointmentListView()
     - Chatting with Providers: Users can initiate and continue conversations with their service providers directly from the appointment details view.
 
 - No Additional UI Required: Similar to other methods in the SanarKit SDK, gotoAppointmentListView comes with a fully integrated user interface. This eliminates the need for developing custom UI components, making it easier and faster to implement post-booking features in your app.
+
+
+# gotoConsultationView
+The SanarKit SDK provides a method called `gotoConsultationView` that allows your app to navigate directly to the consultation flow i.e chat page of the specific appointment. This module can be used to deeplink app directly to consultation flow when opening app from background or killed state via webhook.
+
+To navigate to the Sanar Consultation View of specific appointment, simply call the `gotoConsultationView` method:
+
+```kotlin
+sanarKit.gotoConsultationView(aId = "appointment_id", dId = "doctor_id")
+```
+
+### Parameters:
+- `aId` (String): The unique identifier for the appointment you want to navigate to
+- `dId` (String): The unique identifier of the doctor associated with the appointment
+
+### Description:
+- Direct Navigation: This method enables direct navigation to a specific consultation chat page using the appointment and doctor identifiers
+- Deep Linking Support: Useful for implementing deep linking functionality when the app needs to open a specific consultation from notifications or external sources
+
 
 For more details and implementation examples, please check the example repository [Here](https://github.com/MarenTech/ExampleSanarKitAndroid).
 
