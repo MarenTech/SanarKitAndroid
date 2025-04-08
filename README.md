@@ -20,6 +20,7 @@ Go to the SanarKit releases page by clicking on the following link: [SanarKit SD
 - ## [disconnect](#disconnect-1)
 - ## [gotoBookingView](#gotobookingview-1)
 - ## [gotoAppointmentListView](#gotoappointmentlistview-1)
+- ## [gotoConsultationView](#gotoconsultationview-1)
 
 ### Initializing and Using the SanarKit Android SDK
 
