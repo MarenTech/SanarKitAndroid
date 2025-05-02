@@ -14,7 +14,7 @@ Go to the SanarKit releases page by clicking on the following link: [SanarKit SD
     - Click on the release version to expand the details, and then download the .zip file.
     - Extract the zip file then you will get the .aar file associated with that release.
 
-### The SanarKit will support the following Implementations:
+## The SanarKit will support the following Implementations:
 
 - ## [connect](#connect-1)
 - ## [disconnect](#disconnect-1)
@@ -22,7 +22,7 @@ Go to the SanarKit releases page by clicking on the following link: [SanarKit SD
 - ## [gotoAppointmentListView](#gotoappointmentlistview-1)
 - ## [gotoConsultationView](#gotoconsultationview-1)
 
-### Initializing and Using the SanarKit Android SDK
+# Initializing and Using the SanarKit Android SDK
 
 ## Initialization
 
@@ -30,15 +30,17 @@ Go to the SanarKit releases page by clicking on the following link: [SanarKit SD
 val sanarKit = SanarKit(this)
 ```
 
-`this`: Represents the application context. You should pass the context of your Android application to the `SanarKit` constructor.
+`this` : Represents the application context. You should pass the context of your Android application to the `SanarKit` constructor.
 
-### SanarKit implementations
+# SanarKit Modules
+
 # Connect 
 The SanarKit SDK provides a seamless way to integrate authentication and connection services into your Android applications. One of the key methods in the SDK is connect, which allows your application to authenticate with SanarServices. To effectively integrate authentication and connection services into your iOS application using the SanarKit SDK, you should ensure the following:
 
     - Initialization: Before invoking any Sanar flows or making use of other SDK features, you must initialize the SDK. This typically involves setting up required configurations and ensuring that your application is properly set up to communicate with SanarServices.
 
     - Calling `connect`: The `connect` method should be called as an essential step to authenticate with SanarServices. This method establishes a connection and handles authentication, which is crucial for accessing any subsequent SDK functionalities or services.
+
 
 ```kotlin
 sanarKit.connect(
@@ -48,7 +50,7 @@ sanarKit.connect(
 )
 ```
 
-Parameters : 
+### Parameters : 
 
 `authToken` (String) : The authentication token provided by the service. Replace "<client-id>" with your actual client ID or token.
 
