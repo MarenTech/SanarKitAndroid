@@ -85,7 +85,8 @@ val userInfo = UserInfo(
     documentType = 1,
     phoneCode = "<phone_code>",
     phoneNo = "<phone_number>",
-    maritalStatus = "0"
+    maritalStatus = "0",
+    ipc = "<insurance_provider_code>"
 )
 ```
 
@@ -103,6 +104,7 @@ document_type: number | Document Type
 phone_code : string  | Phone code ex : `966`
 phone_no : string | Phone Number
 marital_status : string | Marital status `0` : `Unmarried`, `1` : `Married`
+ipc : string (optional) : Insurance Provider Code
 
 ### Example Usage : 
 Here is a complete example of how to initialize the SanarKit SDK and connect to the service:
