@@ -16,6 +16,7 @@ Go to the SanarKit releases page by clicking on the following link: [SanarKit SD
 
 ## The SanarKit will support the following Implementations:
 
+- ## [setEnvironment](#setenvironment-1)
 - ## [connect](#connect-1)
 - ## [disconnect](#disconnect-1)
 - ## [gotoBookingView](#gotobookingview-1)
@@ -33,6 +34,29 @@ val sanarKit = SanarKit(this)
 `this` : Represents the application context. You should pass the context of your Android application to the `SanarKit` constructor.
 
 # SanarKit Modules
+
+# setEnvironment
+SanarKit SDK supports multiple environments for different stages of development. By default the SDK is set to the production environment.
+
+## Available Environments
+- `SKEnvironment.PRODUCTION`: Default environment for live/production applications
+- `SKEnvironment.DEVELOPMENT`: Environment for development and debugging
+
+### Example Usage
+
+```kotlin
+// imports
+...
+import com.sanarcare.sanarkit.SKEnvironment
+...
+
+// in code before calling connect method
+...
+val sanarKit = SanarKit(this)
+sanarKit.setEnvironment(SKEnvironment.DEVELOPMENT)
+
+sanarKit.connect(...)
+```
 
 # Connect 
 The SanarKit SDK provides a seamless way to integrate authentication and connection services into your Android applications. One of the key methods in the SDK is connect, which allows your application to authenticate with SanarServices. To effectively integrate authentication and connection services into your iOS application using the SanarKit SDK, you should ensure the following:
