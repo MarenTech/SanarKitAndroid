@@ -70,7 +70,14 @@ The SanarKit SDK provides a seamless way to integrate authentication and connect
 sanarKit.connect(
    authToken = "<client-id>",
    userInfo = userInfo,
-   bundleId = "com.example.demo"
+   bundleId = "com.example.demo",
+   lang = "en", // optional
+   onSuccess = {
+       // Handle successful connection, e.g. update UI or proceed to next step
+   },
+   onError = {
+       // Handle error, e.g. show a Toast or log the error
+   }
 )
 ```
 
@@ -82,6 +89,10 @@ sanarKit.connect(
 
 `lang` (String) Optional :  the language parameter to switch between Arabic and English, default value will be English. To change the language pass the lang parameter in the connect method.
 
+`onSuccess` (() -> Unit)? Optional: Callback invoked on successful connection.
+
+`onError` (() -> Unit)? Optional: Callback invoked on error.
+
 Change Language Example : 
 
 ```kotlin
@@ -89,7 +100,13 @@ sanarKit.connect(
     authToken = "<client-id>",
     userInfo = userInfo,
     bundleId = "com.example.demo",
-    lang = "ar" // en
+    lang = "ar", // en
+    onSuccess = {
+        // Handle success
+    },
+    onError = {
+        // Handle error
+    }
 )
 ```
 
