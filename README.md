@@ -19,6 +19,7 @@ Go to the SanarKit releases page by clicking on the following link: [SanarKit SD
 - ## [setEnvironment](#setenvironment-1)
 - ## [connect](#connect-1)
 - ## [disconnect](#disconnect-1)
+- ## [gotoDashboardView](#gotodashboardview-1)
 - ## [gotoBookingView](#gotobookingview-1)
 - ## [gotoAppointmentListView](#gotoappointmentlistview-1)
 - ## [gotoConsultationView](#gotoconsultationview-1)
