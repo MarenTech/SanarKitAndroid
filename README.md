@@ -186,6 +186,26 @@ sanarKit.disconnect()
 
 Best Practices: It's good practice to call disconnect when your app is about to be suspended, or when the user logs out or navigates away from sections of the app that require a connection to the SanarKit service.
 
+# gotoDashboardView
+The `gotoDashboardView` method launches the unified Sanar Dashboard — a single entry point for all Sanar services with a pre-built, fully functional UI.
+
+Included Services
+    •	Teleconsultation
+	•	Home Visit
+	•	Appointment List (upcoming & past)
+	•	Integrated Chat & Call with providers
+
+Advantages
+	•	Single Access Point: All major Sanar services accessible from one screen.
+	•	Faster Integration: No need to wire up multiple separate SDK views.
+	•	Consistent UI/UX: Matches Sanar’s native experience.
+
+```kotlin
+val sanarKit = SanarKit(this)
+// Make sure you have already called `connect` before navigating to the dashboard
+sanarKit.gotoDashboardView()
+```
+
 # gotoBookingView
 The SanarKit SDK provides a convenient method called `gotoBookingView` that allows your application to navigate directly to the Sanar Booking flow. This method handles the complete booking process within the SDK, simplifying the integration and eliminating the need for extensive additional development, including the creation of UI interfaces.
 
