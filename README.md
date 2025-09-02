@@ -147,7 +147,7 @@ document_type: number | Document Type
 phone_code : string  | Phone code ex : `966`
 phone_no : string | Phone Number
 marital_status : string | Marital status `0` : `Unmarried`, `1` : `Married`
-ipc : string (ptional) : Insurance Provider Code
+ipc : string (ptional) | Insurance Provider Code
 isDependent : Boolean (optional) | Dependent value default `false`
 
 ### Example Usage : 
