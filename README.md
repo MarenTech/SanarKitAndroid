@@ -128,7 +128,8 @@ val userInfo = UserInfo(
     phoneCode = "<phone_code>",
     phoneNo = "<phone_number>",
     maritalStatus = "0",
-    ipc = "<insurance_provider_code>"
+    ipc = "<insurance_provider_code>",
+    isDependent = "<is_dependent>"
 )
 ```
 
@@ -146,7 +147,8 @@ document_type: number | Document Type
 phone_code : string  | Phone code ex : `966`
 phone_no : string | Phone Number
 marital_status : string | Marital status `0` : `Unmarried`, `1` : `Married`
-ipc : string (optional) : Insurance Provider Code
+ipc : string (ptional) : Insurance Provider Code
+isDependent : Boolean (optional) | Dependent value default `false`
 
 ### Example Usage : 
 Here is a complete example of how to initialize the SanarKit SDK and connect to the service:
@@ -165,7 +167,7 @@ val userInfo = UserInfo(
     documentType = 1,
     phoneCode = "91",
     phoneNo = "81794771111",
-    maritalStatus = "0"
+    maritalStatus = "0",
 )
 
 sanarKit.connect(
